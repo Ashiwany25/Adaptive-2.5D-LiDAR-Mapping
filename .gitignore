@@ -1,0 +1,54 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# macOS
+.DS_Store
+
+# VS Code local settings
+.vscode/
+
+# Test and lint caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Large LiDAR datasets
+data/raw/*
+data/processed/*
+data/samples/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/samples/.gitkeep
+
+# Trained models and checkpoints
+models/*
+!models/.gitkeep
+
+# Generated benchmark outputs
+benchmarks/results/
+benchmarks/outputs/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
