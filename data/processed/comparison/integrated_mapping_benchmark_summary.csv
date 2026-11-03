@@ -1,0 +1,4 @@
+Method,Average build time (ms),Average occupied cells,Average mapped points,Average payload (KB)
+Adaptive stabilized,2085.3984583666415,10458.6,121970.7,571.9546875
+Uniform 0.25 m,41.428532600123916,13550.9,121970.7,741.06484375
+Uniform 0.5 m,36.73776070014962,5764.4,121970.7,315.240625

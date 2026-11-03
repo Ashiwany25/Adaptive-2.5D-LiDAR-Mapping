@@ -1,0 +1,71 @@
+
+# 2.5D LiDAR Mapping
+# Central configuration for the prototype
+
+project:
+  name: "Adaptive 2.5D LiDAR Mapping"
+  dataset: "SemanticKITTI"
+  sequence: "00"
+
+mapping:
+  x_min: -50.0
+  x_max: 50.0
+  y_min: -50.0
+  y_max: 50.0
+
+  root_resolution: 1.0
+  minimum_resolution: 0.25
+
+  near_distance: 20.0
+  mid_distance: 40.0
+
+  near_resolution: 0.25
+  mid_resolution: 0.5
+  far_resolution: 1.0
+
+semantic:
+  confidence_threshold: 0.80
+
+  critical_classes:
+    - 10
+    - 11
+    - 13
+    - 15
+    - 18
+    - 20
+    - 30
+    - 31
+    - 32
+    - 80
+    - 81
+    - 252
+    - 253
+    - 254
+    - 255
+    - 256
+    - 257
+    - 258
+    - 259
+
+temporal:
+  occupancy_persistence_frames: 3
+  resolution_coarsening_frames: 3
+  occupancy_deactivation_frames: 2
+
+tracking:
+  maximum_matching_distance: 3.0
+  maximum_missing_frames: 2
+  assumed_frame_interval_seconds: 0.1
+  minimum_instance_points: 5
+
+evaluation:
+  boundary_proxy_distance: 0.50
+  benchmark_repeats: 5
+  nominal_frame_interval_ms: 100.0
+
+data:
+  source: "recorded_semantickitti"
+  semantic_labels: "ground_truth"
+  instance_labels: "ground_truth"
+  confidence_source: "synthetic_for_prototype_evaluation"
+  live_sensor: false

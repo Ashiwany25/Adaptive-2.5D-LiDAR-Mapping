@@ -52,3 +52,34 @@ benchmarks/outputs/
 *.log
 tmp/
 temp/
+
+
+# Python virtual environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local system and editor files
+.DS_Store
+.vscode/
+
+# Raw SemanticKITTI data
+data/raw/
+
+# Large generated HTML visualizations
+data/processed/visualizations/
+
+# Local checkpoints and temporary files
+checkpoints/
+*.pkl
+
+# Keep processed results required by Streamlit
+!data/processed/real_pipeline_validation/
+!data/processed/comparison/
+
+
+# Generated benchmark HTML charts
+benchmarks/real_pipeline_evaluation/*.html

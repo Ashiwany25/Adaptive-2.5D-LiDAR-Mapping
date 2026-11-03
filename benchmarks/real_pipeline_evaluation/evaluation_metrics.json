@@ -1,0 +1,25 @@
+{
+  "dataset": "SemanticKITTI Sequence 00",
+  "frame_count": 10,
+  "mean_processing_time_ms": 65.671670699885,
+  "median_processing_time_ms": 62.831270499373204,
+  "max_processing_time_ms": 93.20758300054877,
+  "mean_static_map_leaves": 9953.8,
+  "mean_object_map_leaves": 472.9,
+  "total_instance_observations": 141,
+  "total_track_observations": 141,
+  "mean_confirmed_static_atomic_cells": 4535.2,
+  "tracking_speed_diagnostics": {
+    "mean_speed_mps": 2.546044240446872,
+    "max_speed_mps": 13.82064477468641
+  },
+  "limitations": [
+    "Only 10 consecutive recorded frames",
+    "Ground-truth semantic and instance labels",
+    "Ground-truth odometry pose alignment",
+    "No semantic inference benchmark",
+    "No live sensor acquisition",
+    "No independent tracking accuracy score",
+    "Processing time excludes data loading"
+  ]
+}

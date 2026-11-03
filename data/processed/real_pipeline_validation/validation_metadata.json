@@ -1,0 +1,13 @@
+{
+  "dataset": "SemanticKITTI",
+  "sequence": "00",
+  "frames": 10,
+  "processing_mode": "offline_recorded_data",
+  "pose_source": "KITTI odometry poses",
+  "semantic_source": "SemanticKITTI ground-truth labels",
+  "instance_source": "SemanticKITTI ground-truth labels",
+  "confidence_source": null,
+  "mapping": "adaptive hierarchical 2.5D",
+  "temporal_persistence_frames": 3,
+  "runtime_scope": "in-memory pipeline processing only; excludes scan loading and pose estimation"
+}
